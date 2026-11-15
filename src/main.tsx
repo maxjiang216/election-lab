@@ -2,6 +2,7 @@ import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./aed/App";
 import { GermanRules } from "./aed/components/GermanRules";
+import { PartyRule } from "./aed/components/PartyRule";
 import { SeatsTimeline } from "./aed/components/SeatsTimeline";
 import { DistrictsPage } from "./districting/DistrictsPage";
 import { Home, Nav } from "./site/Shell";
@@ -13,6 +14,7 @@ const PAGES = {
   home: Home,
   germany: GermanRules,
   congress: SeatsTimeline,
+  rule: PartyRule,
   districts: DistrictsPage,
   elections: App,
 };

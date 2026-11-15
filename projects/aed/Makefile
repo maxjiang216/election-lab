@@ -1,5 +1,5 @@
 # Rebuild data from raw sources (needs .venv: python3 -m venv .venv && .venv/bin/pip install -r scripts/ingest/requirements.txt).
-.PHONY: data shapes congress
+.PHONY: data shapes congress partyrule
 data:
 	.venv/bin/python scripts/ingest/fetch_sources.py
 	.venv/bin/python scripts/ingest/build_statewide.py
@@ -12,3 +12,7 @@ shapes:
 # Party control of House/Senate over time (fetches congress-legislators + ~100 Wikipedia pages on first run; cached in raw/congress/).
 congress:
 	.venv/bin/python scripts/ingest/congress_seats.py
+
+# Governor/legislature party by state and year + state populations (fetches ~52 Wikipedia pages on first run; cached in raw/).
+partyrule:
+	.venv/bin/python scripts/ingest/party_rule.py

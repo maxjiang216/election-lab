@@ -204,6 +204,31 @@ a { color: var(--accent); }
 .seat-table th, .seat-table td { text-align: left; padding: 3px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .seat-table td:nth-child(n+3) { font-variant-numeric: tabular-nums; text-align: right; }
 
+/* Party rule (governors / trifectas) */
+:root {
+  --pr-dem-light: #9bb7e6; --pr-rep-light: #eba3a8; --pr-other: #c0901f; --pr-none: #d9dce1;
+  --pr-whig: #e3b54a; --pr-dr: #3f9a72; --pr-fed: #8a6bb5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --pr-dem-light: #36507d; --pr-rep-light: #7d3a40; --pr-other: #b38a22; --pr-none: #353a44;
+    --pr-whig: #c9a03f; --pr-dr: #3f8a68; --pr-fed: #8a72b8;
+  }
+}
+:root[data-theme="dark"] {
+  --pr-dem-light: #36507d; --pr-rep-light: #7d3a40; --pr-other: #b38a22; --pr-none: #353a44;
+  --pr-whig: #c9a03f; --pr-dr: #3f8a68; --pr-fed: #8a72b8;
+}
+.rule-tip { width: 290px; }
+.rule-tip td i, .rule-states i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+.rule-tip td:nth-child(2) { text-align: right; font-variant-numeric: tabular-nums; }
+.rule-tip td:last-child { color: var(--muted); width: 2.2em; }
+.rule-states { margin-top: 12px; font-size: 0.88rem; }
+.rule-states h2 { font-size: 1rem; margin: 0 0 6px; }
+.rule-states dl { margin: 0; display: grid; gap: 6px; }
+.rule-states dt { font-weight: 600; }
+.rule-states dd { margin: 0 0 0 16px; color: var(--muted); word-spacing: 2px; }
+
 /* Site shell */
 .site-nav {
   display: flex; align-items: center; gap: 4px 18px; flex-wrap: wrap;

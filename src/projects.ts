@@ -59,6 +59,16 @@ export const PROJECTS: Project[] = [
     routes: ["#/congress"],
   },
   {
+    title: "Who governs Americans",
+    blurb: "Share of Americans living under Democratic or Republican governors, and under each party's trifectas, every year since 1789.",
+    href: "#/rule",
+    author: "Max",
+    tags: ["history", "chart"],
+    accent: "#4a5bb0",
+    nav: "Governors",
+    routes: ["#/rule"],
+  },
+  {
     title: "The House under German rules",
     blurb: "Re-run U.S. House and Canadian elections with the Bundestag's mixed-member proportional system.",
     href: "#/germany",

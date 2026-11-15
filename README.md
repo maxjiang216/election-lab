@@ -5,7 +5,7 @@ Live at https://aed-ruby.vercel.app/.
 
 | project | what | code | on the site |
 |---|---|---|---|
-| American Elections Database | U.S. results by state since 1828, counties since 2000, House districts since 1976; party control of Congress; Bundestag-rules what-if | [`projects/aed`](projects/aed) | `#/president/...`, `#/congress`, `#/germany` |
+| American Elections Database | U.S. results by state since 1828, counties since 2000, House districts since 1976; party control of Congress; share of Americans under each party's governors/trifectas; Bundestag-rules what-if | [`projects/aed`](projects/aed) | `#/president/...`, `#/congress`, `#/rule`, `#/germany` |
 | Shortest-border districts | equal-population House districts from census blocks minimising total border length; 2020-vote projections; citizen apportionment | [`projects/districting`](projects/districting) | `#/districts`, `#/districts/citizen` |
 
 ## Layout
